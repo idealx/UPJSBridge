@@ -96,8 +96,8 @@ UPJSBridge.callNativeByURL({
 ```
 
 ### 关于模块化
-Demo 项目里简单使用 runtime 实现了 API 的分模块实现，统一的 API 在 JSDataAPI 中实现，项目中不同模块提供给 JS 的 API 可通过给 JSDataAPI 加 Category 的方式实现，可参见项目中的 JSDataAPI+ModuleFoo。
+Demo 项目里简单使用 runtime 实现了 API 的分模块实现，统一的 API 在 JSDataAPI 中实现，项目中不同模块提供给 JS 的 API 可通过给 JSDataAPI 加 Category 的方式实现，参见项目中的 JSDataAPI+ModuleFoo。
 
 ### 注意事项
 * NSURLProtocol 默认不支持拦截 WKWebView 的请求，需要用到私有 API，可能有一定兼容性及审核的风险，具体参见 [NSURLProtocol-WebKitSupport](https://github.com/yeatse/NSURLProtocol-WebKitSupport)
-* 如果 App 内有多个 NSURLProtocol 子类，最后注册的子类最新调用，此时需要统一规划 NSURLProtocol 的注册及使用
+* 如果 App 内有多个 NSURLProtocol 子类，最后注册的子类最先被调用，此时需要统一规划 NSURLProtocol 的注册及使用
