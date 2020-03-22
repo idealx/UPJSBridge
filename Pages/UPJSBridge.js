@@ -3,7 +3,7 @@
 	String.prototype.times33Hash = function() {
 		var hash = 5381, index = this.length;
 		while (index) {
-				hash = (hash * 33) ^ this.charCodeAt(--index);
+			hash = (hash * 33) ^ this.charCodeAt(--index);
 		}
 		return hash >>> 0;
 	}
@@ -16,19 +16,19 @@
 	 	options.async = options.async || true;
 		var params = getParams(options.data);
 		var xhr; 
-		if (window.XMLHttpRequest){
-				xhr = new XMLHttpRequest();
+		if (window.XMLHttpRequest) {
+			xhr = new XMLHttpRequest();
 		} else {
-			 xhr = new ActiveXObject('Microsoft.XMLHTTP')
+			xhr = new ActiveXObject('Microsoft.XMLHTTP')
 		} 
 		xhr.onreadystatechange = function() { 
 			if (xhr.readyState == 4) {
 				var status = xhr.status;
-					if (status >= 200 && status < 300 ) {
-							options.success && options.success(xhr.responseText,xhr.responseXML);
-					} else {
-							options.error && options.error(status);
-					} 
+				if (status >= 200 && status < 300) {
+					options.success && options.success(xhr.responseText,xhr.responseXML);
+				} else {
+					options.error && options.error(status);
+				}
 			 } 
 	 	};
 		if (options.type == 'GET') { 
@@ -70,37 +70,37 @@
 	  		var callIdentifier = (api + paramString + timestamp + randomNum).times33Hash();
 	  		console.log(callIdentifier);
 	  		var callbackRand = 'cb' + callIdentifier;
-        window[callbackRand] = function() {
-            // Can only run once.
-            if (window[callbackRand]._exec > 0) return;
-            window[callbackRand]._exec++;
-            callback(arguments[0]);
-            // Remove random function
-            setTimeout(function() {
-                delete window[callbackRand];
-                // Remove random parameters
-                delete window[paramRand];
-            }, 100);
-        };
-        window[callbackRand]._exec = 0;
-        callURL.push('&cb=' + callbackRand);
+	        window[callbackRand] = function() {
+	            // Can only run once.
+	            if (window[callbackRand]._exec > 0) return;
+	            window[callbackRand]._exec++;
+	            callback(arguments[0]);
+	            // Remove random function
+	            setTimeout(function() {
+	                delete window[callbackRand];
+	                // Remove random parameters
+	                delete window[paramRand];
+	            }, 100);
+	        };
+	        window[callbackRand]._exec = 0;
+	        callURL.push('&cb=' + callbackRand);
 
-        // Add random params name, need remove when finished.
-        var paramRand = 'p' + callIdentifier;
-        window[paramRand] = JSON.stringify(params);
-        callURL.push('&p=' + paramRand);
+	        // Add random params name, need remove when finished.
+	        var paramRand = 'p' + callIdentifier;
+	        window[paramRand] = JSON.stringify(params);
+	        callURL.push('&p=' + paramRand);
 
-        // New iframe open URL.
-				var iframe = document.createElement('iframe');
+	        // New iframe open URL.
+			var iframe = document.createElement('iframe');
 		    iframe.style.display = 'none';
 		    iframe.src = callURL.join('');
 		    document.documentElement.appendChild(iframe);
 		    setTimeout(function() { 
-		      document.documentElement.removeChild(iframe);
+		      	document.documentElement.removeChild(iframe);
 		    }, 1000);
-			} else {
-				console.log('No bridgeWebView set.');
-			}
+		} else {
+			console.log('No bridgeWebView set.');
+		}
   	},
   	callNativeByAJAX: function(opt) {
   		var api = opt.api || null;
@@ -108,15 +108,15 @@
   		var callback = opt.callback || function() {};
   		var baseAJAXURL = 'http://ajax.call.native/';
   		ajax({
-				url: baseAJAXURL + api,
-	      data: params,
-	      success: function(data) {
-	        callback(data);
-				},
-				error: function(status) {
-					console.log('ajax error status: ' + status);
-				}
-		  });
+			url: baseAJAXURL + api,
+	      	data: params,
+	      	success: function(data) {
+	        	callback(data);
+			},
+			error: function(status) {
+				console.log('ajax error status: ' + status);
+			}
+		});
   	}
   };
 })();
