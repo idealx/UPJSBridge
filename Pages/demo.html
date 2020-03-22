@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+  <title>UPWebViewJSBridgeDemo</title>
+  <style type="text/css"></style>
+</head>
+
+<body>
+  <div class="mod-page">
+		<h3>URL call Native</h3>
+		<button id="url_call_version">Fetch api version</button>
+		<button id="url_call_foo">Call foo module api</button>
+		<div id="url_call_result"></div>
+
+		<h3>AJAX call Native</h3>
+    <button id="ajax_call_version">Fetch api version</button>
+		<button id="ajax_call_foo">Call foo module api</button>
+		<div id="ajax_call_result"></div>
+  </div>
+  <script type="text/javascript" src="UPJSBridge.js"></script>
+  <script type="text/javascript">
+		document.getElementById('url_call_version').addEventListener('click', function(e) {
+			UPJSBridge.callNativeByURL({
+				api: 'version',
+				callback: function(data) {
+					document.getElementById('url_call_result').innerHTML = 'result: ' + data;
+				}
+			});
+		});
+
+		document.getElementById('url_call_foo').addEventListener('click', function(e) {
+			UPJSBridge.callNativeByURL({
+				api: 'fooDemo',
+				params: {
+					name: 'value'
+				},
+				callback: function(data) {
+					document.getElementById('url_call_result').innerHTML = 'result: ' + data;
+				}
+			});
+		});
+
+	  document.getElementById('ajax_call_version').addEventListener('click', function(e) {
+		  UPJSBridge.callNativeByAJAX({
+		  	api: 'version',
+				callback: function(data) {
+					document.getElementById('ajax_call_result').innerHTML = 'result: ' + data;
+				}
+		  });
+		});
+		
+		document.getElementById('ajax_call_foo').addEventListener('click', function(e) {
+		  UPJSBridge.callNativeByAJAX({
+		  	api: 'fooDemo',
+				params: {
+					name: 'value'
+				},
+				callback: function(data) {
+					document.getElementById('ajax_call_result').innerHTML = 'result: ' + data;
+				}
+		  });
+	  });
+  </script>
+</body>
+
+</html>

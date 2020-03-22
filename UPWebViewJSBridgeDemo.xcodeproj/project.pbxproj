@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E62C940B24228D32003278F0 /* JSDataAPI+ModuleFoo.m in Sources */ = {isa = PBXBuildFile; fileRef = E62C940A24228D32003278F0 /* JSDataAPI+ModuleFoo.m */; };
+		E64CC3AB2420FBA900337474 /* JSDataAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CC3AA2420FBA900337474 /* JSDataAPI.m */; };
+		E6615CAF2419505D00C7F043 /* UIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6615CAE2419505D00C7F043 /* UIWebViewController.m */; };
+		E6615CB2241950FB00C7F043 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6615CB1241950FB00C7F043 /* WKWebViewController.m */; };
+		E6615CBB241AB0CC00C7F043 /* UPJSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = E6615CBA241AB0CC00C7F043 /* UPJSBridge.m */; };
+		E6D6BCA62419321D00E21209 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D6BCA52419321D00E21209 /* AppDelegate.m */; };
+		E6D6BCAC2419321D00E21209 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D6BCAB2419321D00E21209 /* MainViewController.m */; };
+		E6D6BCAF2419321D00E21209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6D6BCAD2419321D00E21209 /* Main.storyboard */; };
+		E6D6BCB12419321D00E21209 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6D6BCB02419321D00E21209 /* Assets.xcassets */; };
+		E6D6BCB42419321D00E21209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6D6BCB22419321D00E21209 /* LaunchScreen.storyboard */; };
+		E6D6BCB72419321D00E21209 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D6BCB62419321D00E21209 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E62C940924228D32003278F0 /* JSDataAPI+ModuleFoo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSDataAPI+ModuleFoo.h"; sourceTree = "<group>"; };
+		E62C940A24228D32003278F0 /* JSDataAPI+ModuleFoo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "JSDataAPI+ModuleFoo.m"; sourceTree = "<group>"; };
+		E64CC3A92420FBA900337474 /* JSDataAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSDataAPI.h; sourceTree = "<group>"; };
+		E64CC3AA2420FBA900337474 /* JSDataAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSDataAPI.m; sourceTree = "<group>"; };
+		E6615CAD2419505D00C7F043 /* UIWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIWebViewController.h; sourceTree = "<group>"; };
+		E6615CAE2419505D00C7F043 /* UIWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIWebViewController.m; sourceTree = "<group>"; };
+		E6615CB0241950FB00C7F043 /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		E6615CB1241950FB00C7F043 /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		E6615CB9241AB0CC00C7F043 /* UPJSBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UPJSBridge.h; sourceTree = "<group>"; };
+		E6615CBA241AB0CC00C7F043 /* UPJSBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UPJSBridge.m; sourceTree = "<group>"; };
+		E6D6BCA12419321D00E21209 /* UPWebViewJSBridgeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UPWebViewJSBridgeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6D6BCA42419321D00E21209 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E6D6BCA52419321D00E21209 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E6D6BCAA2419321D00E21209 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E6D6BCAB2419321D00E21209 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		E6D6BCAE2419321D00E21209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6D6BCB02419321D00E21209 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6D6BCB32419321D00E21209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E6D6BCB52419321D00E21209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6D6BCB62419321D00E21209 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6D6BC9E2419321D00E21209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E622FF9A242294E000E57858 /* UPJSBridge */ = {
+			isa = PBXGroup;
+			children = (
+				E6615CB9241AB0CC00C7F043 /* UPJSBridge.h */,
+				E6615CBA241AB0CC00C7F043 /* UPJSBridge.m */,
+				E64CC3A92420FBA900337474 /* JSDataAPI.h */,
+				E64CC3AA2420FBA900337474 /* JSDataAPI.m */,
+			);
+			path = UPJSBridge;
+			sourceTree = "<group>";
+		};
+		E6D6BC982419321D00E21209 = {
+			isa = PBXGroup;
+			children = (
+				E6D6BCA32419321D00E21209 /* UPWebViewJSBridgeDemo */,
+				E6D6BCA22419321D00E21209 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6D6BCA22419321D00E21209 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6D6BCA12419321D00E21209 /* UPWebViewJSBridgeDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6D6BCA32419321D00E21209 /* UPWebViewJSBridgeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E622FF9A242294E000E57858 /* UPJSBridge */,
+				E6D6BCA42419321D00E21209 /* AppDelegate.h */,
+				E6D6BCA52419321D00E21209 /* AppDelegate.m */,
+				E6D6BCAA2419321D00E21209 /* MainViewController.h */,
+				E6D6BCAB2419321D00E21209 /* MainViewController.m */,
+				E6D6BCAD2419321D00E21209 /* Main.storyboard */,
+				E62C940924228D32003278F0 /* JSDataAPI+ModuleFoo.h */,
+				E62C940A24228D32003278F0 /* JSDataAPI+ModuleFoo.m */,
+				E6615CAD2419505D00C7F043 /* UIWebViewController.h */,
+				E6615CAE2419505D00C7F043 /* UIWebViewController.m */,
+				E6615CB0241950FB00C7F043 /* WKWebViewController.h */,
+				E6615CB1241950FB00C7F043 /* WKWebViewController.m */,
+				E6D6BCB02419321D00E21209 /* Assets.xcassets */,
+				E6D6BCB22419321D00E21209 /* LaunchScreen.storyboard */,
+				E6D6BCB52419321D00E21209 /* Info.plist */,
+				E6D6BCB62419321D00E21209 /* main.m */,
+			);
+			path = UPWebViewJSBridgeDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6D6BCA02419321D00E21209 /* UPWebViewJSBridgeDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6D6BCBA2419321D00E21209 /* Build configuration list for PBXNativeTarget "UPWebViewJSBridgeDemo" */;
+			buildPhases = (
+				E6D6BC9D2419321D00E21209 /* Sources */,
+				E6D6BC9E2419321D00E21209 /* Frameworks */,
+				E6D6BC9F2419321D00E21209 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UPWebViewJSBridgeDemo;
+			productName = UPWebViewJSBridgeDemo;
+			productReference = E6D6BCA12419321D00E21209 /* UPWebViewJSBridgeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6D6BC992419321D00E21209 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = idealx;
+				TargetAttributes = {
+					E6D6BCA02419321D00E21209 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = E6D6BC9C2419321D00E21209 /* Build configuration list for PBXProject "UPWebViewJSBridgeDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6D6BC982419321D00E21209;
+			productRefGroup = E6D6BCA22419321D00E21209 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6D6BCA02419321D00E21209 /* UPWebViewJSBridgeDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6D6BC9F2419321D00E21209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6D6BCB42419321D00E21209 /* LaunchScreen.storyboard in Resources */,
+				E6D6BCB12419321D00E21209 /* Assets.xcassets in Resources */,
+				E6D6BCAF2419321D00E21209 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6D6BC9D2419321D00E21209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6D6BCAC2419321D00E21209 /* MainViewController.m in Sources */,
+				E6D6BCA62419321D00E21209 /* AppDelegate.m in Sources */,
+				E6D6BCB72419321D00E21209 /* main.m in Sources */,
+				E62C940B24228D32003278F0 /* JSDataAPI+ModuleFoo.m in Sources */,
+				E64CC3AB2420FBA900337474 /* JSDataAPI.m in Sources */,
+				E6615CAF2419505D00C7F043 /* UIWebViewController.m in Sources */,
+				E6615CBB241AB0CC00C7F043 /* UPJSBridge.m in Sources */,
+				E6615CB2241950FB00C7F043 /* WKWebViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E6D6BCAD2419321D00E21209 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6D6BCAE2419321D00E21209 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E6D6BCB22419321D00E21209 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6D6BCB32419321D00E21209 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6D6BCB82419321D00E21209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E6D6BCB92419321D00E21209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6D6BCBB2419321D00E21209 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = UPWebViewJSBridgeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = li.xiang.UPWebViewJSBridgeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E6D6BCBC2419321D00E21209 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = UPWebViewJSBridgeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = li.xiang.UPWebViewJSBridgeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6D6BC9C2419321D00E21209 /* Build configuration list for PBXProject "UPWebViewJSBridgeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6D6BCB82419321D00E21209 /* Debug */,
+				E6D6BCB92419321D00E21209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6D6BCBA2419321D00E21209 /* Build configuration list for PBXNativeTarget "UPWebViewJSBridgeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6D6BCBB2419321D00E21209 /* Debug */,
+				E6D6BCBC2419321D00E21209 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6D6BC992419321D00E21209 /* Project object */;
+}
