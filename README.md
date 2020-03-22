@@ -100,4 +100,4 @@ Demo 项目里简单使用 runtime 实现了 API 的分模块实现，统一的 
 
 ### 注意事项
 * NSURLProtocol 默认不支持拦截 WKWebView 的请求，需要用到私有 API，可能有一定兼容性及审核的风险，具体参见 [NSURLProtocol-WebKitSupport](https://github.com/yeatse/NSURLProtocol-WebKitSupport)
-* 如果 App 内有多个 NSURLProtocol 子类，最后注册的子类最新调用，此时需要统一规划 NSURLProtocol 的注册及使用
+* 如果 App 内有多个 NSURLProtocol 子类，最后注册的子类最先被调用，此时需要统一规划 NSURLProtocol 的注册及使用
